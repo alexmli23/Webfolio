@@ -1,16 +1,16 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 
 const Intro= () => {
-  const traits = [
+  const traits = useMemo(() =>[
     { text: "Alex Li", color: "#FFFFFF" },
     { text: "Software Engineer", color: "#20C997" },
     { text: "Swimmer", color: "#6CC0BA" },
     { text: "Avid Reader", color:"#bc6a3c"},
-    { text: "Niki's Biggest Fan", color:"#ADD8E6"},
+    { text: "Niki&apos;s Biggest Fan", color:"#ADD8E6"},
     { text: "Watching Arcane :(", color:"#7F00FF"}
-  ];
+  ], [])
 
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
@@ -40,7 +40,7 @@ const Intro= () => {
     <div style={{ backgroundColor: "#2C2C2C", height: "100vh", transition: "background-color 1s ease" }}>
       <div className="flex flex-col items-center justify-center h-full">
         <h1 className="text-5xl py-2">
-          <span className="bg-white text-black px-2 rounded-sm">Hi!</span> I'm{isWithArticle && " a"}
+          <span className="bg-white text-black px-2 rounded-sm">Hi!</span> I&apos;m{isWithArticle && " a"}
         </h1>
         <h1 className="text-9xl" style={{ color: traits[traitIndex].color }}>
           {displayedText}
