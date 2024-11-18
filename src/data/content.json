@@ -1,0 +1,21 @@
+{
+    "general":{
+        "first_name": "Alex",
+        "middle_name": "Madison",
+        "last_name" : "Li",
+        "navbar_links":{
+            "github": "https://github.com/alexmli23",
+            "linkedin": "https://www.linkedin.com/in/alexanderli523/",
+            "email": "amli2@wisc.edu",
+            "resume": "ADD LMAO"
+        }
+    },
+    "intro_screen":{
+        "main_header": "Hi! I'm Alex",
+        "main_subheader": "I like to fix things, sometimes",
+        "intro_bio":[
+            "I'm currently a Junior at the University of Wisconsin - Madison studying Computer and ",
+            "Data Science"
+        ]
+    }
+}
